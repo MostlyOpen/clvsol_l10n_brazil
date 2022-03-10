@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013-Today  Carlos Eduardo Vercelino - CLVsol
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+
+<odoo noupdate="True">
+
+    <record id="base.br" model="res.country">
+        <field name="enforce_cities">1</field>
+        <field name="street_format" eval="'%(street_name)s, %(street_number)s/%(street_number2)s'"/>
+        <field name="name_position">before</field>
+        <!--field name="address_format" eval="'%(street)s, %(street_number)s %(street2)s\n%(district)s\n%(zip)s - %(city)s-%(state_code)s\n%(country_name)s'"/-->
+        <field name="address_format" eval="'%(street)s
+%(street2)s
+%(city)s %(state_code)s %(zip)s
+%(country_name)s'"/>
+        <!--field name="address_view_id" ref="l10n_br_base_res_partner_address"/-->
+    </record>
+
+</odoo>
