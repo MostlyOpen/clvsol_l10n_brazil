@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013-Today  Carlos Eduardo Vercelino - CLVsol
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+
+<odoo>
+
+    <menuitem name="CEPs" id="contacts.menu_localisation_ceps"
+        parent="contacts.menu_localisation"
+        action="clv_l10n_br_zip.l10n_br_zip_action"
+        sequence="2"/>
+
+</odoo>
